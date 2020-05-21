@@ -23,4 +23,5 @@
   * [Better Training](better-deep-learning/better-training.md)
   * [Better Generalization](better-deep-learning/better-generalization.md)
   * [Better Prediction](better-deep-learning/better-prediction.md)
+* [Contribute to the Wiki](contribute-to-the-wiki.md)
 
