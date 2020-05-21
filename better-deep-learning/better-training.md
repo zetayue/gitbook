@@ -62,5 +62,8 @@ train deep neural networks with tens of layers is challenging as they can be sen
 
 ### Jump start with transfer learning
 
+### Blogs
+1. what should I do if my network does not learn [https://stats.stackexchange.com/questions/352036/what-should-i-do-when-my-neural-network-doesnt-learn]
+
 ### Issues Log
 
