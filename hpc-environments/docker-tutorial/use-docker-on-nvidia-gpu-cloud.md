@@ -89,7 +89,7 @@ If you find your needed release of the image is not on the HPCs, please contact 
 
 ### 3. Use Docker Images
 
-Run a container:
+Run a container pulled from NGC:
 
 ```text
 nvidia-docker run --name containerName -it --network=host --rm -v local_dir:container_dir nvcr.io/nvidia/repository:<xx.xx>
