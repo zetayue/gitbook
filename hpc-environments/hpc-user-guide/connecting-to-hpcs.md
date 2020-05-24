@@ -7,6 +7,8 @@ The IP addresses of the [DGX-Lei workstation](https://compsci-hunter.gitbook.io/
 | DGX | 146.95.214.135 |
 | DLS | 146.95.128.169 |
 
+Both of the two machines are inside the network of the Hunter College \(Hunter network\).
+
 ### 1. Inside the Hunter Network
 
 You can use `ssh` via a computer inside the Hunter network to access it:

@@ -1,4 +1,4 @@
-# Overall Workflow
+# Workflow
 
 To have an overall understanding of how to run jobs on the HPCs, a workflow is shown as below:
 
