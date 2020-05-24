@@ -1,6 +1,6 @@
 # Connect to HPCs
 
-The IP addresses of the DGX-Lei workstation and the Hunter DLS Server are:
+The IP addresses of the [DGX-Lei workstation](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/summary-of-hpcs/dgx-lei-workstation) and the [Hunter DLS Server](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/summary-of-hpcs/hunter-dls-server) are:
 
 | HPC | IP address |
 | :--- | :--- |
