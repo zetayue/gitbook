@@ -4,11 +4,9 @@ description: Be aware that your data can be easily damaged on HPCs
 
 # Data Backup
 
-{% hint style="warning" %}
 Simply storing data under `/raid` without a backup is unsafe since we use the [RAID 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) configuration on the DGX and DLS! 
 
 It is **mandatory** that all users periodly back up their data by themselves using their preferred ways.
-{% endhint %}
 
 ### 1. On DGX
 
