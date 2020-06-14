@@ -10,7 +10,8 @@
 2. understand the relationship of specified loss with objective
 3. understand implication of loss
 4. expect the value range of loss term is possible \(possible after certain data scaling\)
-5. customized loss
+5. customized loss  
+use one or few samples and simple MLP, and SGD (or any optimizer) to verify the loss can be learned to reduce with gradient descent  
 6. weighted loss
 
 ### Configure gradient precision with batch size
