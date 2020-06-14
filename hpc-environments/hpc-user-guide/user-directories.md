@@ -1,6 +1,6 @@
 # User Directories
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Do not use the default home directory `/home/user_name`after login as your work directory.
 {% endhint %}
 
