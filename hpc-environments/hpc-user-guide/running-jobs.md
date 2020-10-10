@@ -6,7 +6,7 @@ In order to run a job, a proper environment has to be prepared at first.
 
 ### 1. Choose a Docker Image
 
-It is highly recommended to run your job inside a Docker image container. You can find more information in the [Docker tutorial](https://compsci-hunter.gitbook.io/xie-research-group/useful-tutorials/docker-tutorial) page.
+It is highly recommended to run your job inside a Docker image container. You can find more information in the [Docker tutorial](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/docker-tutorial) page.
 
 ### 2. Check the system status
 

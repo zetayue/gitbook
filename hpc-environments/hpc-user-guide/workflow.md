@@ -1,6 +1,8 @@
 # Overall Workflow
 
-To have an overall understanding of how to run jobs on the HPCs, a workflow is shown as below:
+The systems on the HPCs are all [Ubuntu](https://ubuntu.com/), which is a Linux operating system. The users should have the basic knowledge about using the Linux system. Information can be found on the [Linux Tutorial](https://compsci-hunter.gitbook.io/xie-research-group/useful-tutorials/linux-tutorial) page.
+
+To have an overall understanding of how to run jobs on the HPCs, a workflow is shown below:
 
 | Step | Work | Reference |
 | :--- | :--- | :--- |
