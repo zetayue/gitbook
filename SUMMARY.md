@@ -24,6 +24,7 @@
     * [Better Training](useful-tutorials/better-deep-learning/better-training.md)
     * [Better Generalization](useful-tutorials/better-deep-learning/better-generalization.md)
     * [Better Prediction](useful-tutorials/better-deep-learning/better-prediction.md)
+  * [About Graph Neural Networks](useful-tutorials/about-graph-neural-networks.md)
   * [Data Preprocessing](useful-tutorials/data-preprocessing/README.md)
     * [Untitled](useful-tutorials/data-preprocessing/untitled-1.md)
     * [Untitled](useful-tutorials/data-preprocessing/untitled.md)
