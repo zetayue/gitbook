@@ -20,6 +20,8 @@
     * [Docker Commands](useful-tutorials/docker-tutorial/docker-commands.md)
     * [Use Docker for General Purpose](useful-tutorials/docker-tutorial/use-docker-for-general-purpose.md)
     * [Use Docker for Deep Learning](useful-tutorials/docker-tutorial/use-docker-on-nvidia-gpu-cloud.md)
+  * [Jupyter Notebook Tutorial](useful-tutorials/jupyter-notebook-tutorial/README.md)
+    * [Run Jupyter Server with GPU Access on HPCs](useful-tutorials/jupyter-notebook-tutorial/run-jupyter-server-with-gpu-access-on-hpcs.md)
   * [Better Deep Learning](useful-tutorials/better-deep-learning/README.md)
     * [Better Training](useful-tutorials/better-deep-learning/better-training.md)
     * [Better Generalization](useful-tutorials/better-deep-learning/better-generalization.md)
