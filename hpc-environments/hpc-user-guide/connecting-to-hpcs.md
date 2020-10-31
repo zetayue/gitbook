@@ -42,6 +42,7 @@ If you want to access the HPCs outside the Hunter network, you can use the follo
 This way is more secure than the first one and you don't need to type your password every time.
 
 1. Create your own ssh keys  
+  
    **MacOS/Linux:**
 
    ```bash
@@ -49,10 +50,12 @@ This way is more secure than the first one and you don't need to type your passw
    ```
 
    Hit enter to keep the default settings all the way util the key pair is successfully created.  
+  
    **Windows:**  
    Windows now support OpenSSH. If `ssh` command does not work, you should be able to install it following the instructions here: [OpenSSH in Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_overview). The following protocols are based on OpenSSH. You should also be able to do it with PuTTY, but it is not recommended.  
 
 2. Copy your public key to eniac and HPCs  
+  
    After generating ssh key pair, you should get two files in .ssh directory: id\_rsa and id\_rsa.pub. id\_rsa is your private key, you should keep it only to yourself. The id\_rsa.pub file is the public key file. We need to copy it to eniac and HPCs so we do not need to type password every time. The command to copy your id\_rsa.pub to other computer is:
 
    ```bash
