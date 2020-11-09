@@ -102,5 +102,5 @@ then create a password:
 jupyter notebook password
 ```
 
-Type in your password twice. Then an encrypted password with being saved into the config file you created above. Now you can start the Jupyter server as in step 4. When you connect to the server started this way, the login page will only ask you for the password.
+Type in your password twice, then an encrypted password will be saved into the config file you created above. Now you can start the Jupyter server as in step 4. When you connect to the server started this way, the login page will only ask you for the password.
 
