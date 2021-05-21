@@ -22,6 +22,7 @@
     * [Use Docker for Deep Learning](useful-tutorials/docker-tutorial/use-docker-on-nvidia-gpu-cloud.md)
   * [HTCondor Tutorial](useful-tutorials/htcondor-tutorial/README.md)
     * [Introduction of HTCondor™](useful-tutorials/htcondor-tutorial/introduction-of-htcondor-tm.md)
+    * [Manage Job with HTCondor](useful-tutorials/htcondor-tutorial/manage-job-with-htcondor.md)
   * [Jupyter Notebook Tutorial](useful-tutorials/jupyter-notebook-tutorial/README.md)
     * [Run Jupyter Server with GPU Access on HPCs](useful-tutorials/jupyter-notebook-tutorial/run-jupyter-server-with-gpu-access-on-hpcs.md)
   * [Better Deep Learning](useful-tutorials/better-deep-learning/README.md)
