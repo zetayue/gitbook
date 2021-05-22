@@ -16,11 +16,7 @@ HTCondor creates a per-job scratch directory on the execute machine, transfers a
 
 The executable file can come from one of two places: either from within the container’s image, or it can be a script transfered from the submit machine to the scratch directory of the execute machine. To specify the former, use an absolute path \(starting with a /\) for the executable. For the latter, use a relative path.
 
-Therefore, the submit description file should contain the submit command
-
-```text
-should_transfer_files = YES
-```
+Therefore, the submit description file should contain the submit command `should_transfer_files = YES`.
 
 With this command, all input and output files will be transferred as required to and from the scratch directory mounted as a Docker volume.
 
