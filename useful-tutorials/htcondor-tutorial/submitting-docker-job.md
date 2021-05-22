@@ -48,7 +48,7 @@ request_disk            = 10240
 queue
 ```
 
-A PyTorch container is the HTCondor job, and it runs the`sub.sh`script.
+A PyTorch container \(docker image name`nvcr.io/nvidia/pytorch:20.06-py3`\) is the HTCondor job, and it runs the`sub.sh`script. You can find possible docker image using`docker image`command \(more details [here](https://compsci-hunter.gitbook.io/xie-research-group/useful-tutorials/docker-tutorial/use-docker-on-nvidia-gpu-cloud#use-ngc-service-on-hpcs)\).
 
 ## Bash File for Docker Job
 
