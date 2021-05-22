@@ -1,4 +1,4 @@
-# Docker Commands
+# Docker Useful Commands
 
 This part contains a collection of basic and useful Docker commands in daily using. A full list of Docker commands can be found at [here](https://docs.docker.com/engine/reference/commandline/docker/). For the Docker commands for [NVIDIA DGX Cloud Service](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/docker-tutorial/use-docker-on-nvidia-gpu-cloud) usage can be found at [1](http://docs.nvidia.com/dgx/dgx-registry-user-guide/index.html#using-dgx-registry-from-docker-command-line) and [2](http://docs.nvidia.com/ngc/ngc-user-guide/index.html).
 

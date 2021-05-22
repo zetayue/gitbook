@@ -1,12 +1,10 @@
-# Manage Job with HTCondor
+# Quick Start Guide
 
-## Quick Start Guide
-
-### Overall Pipeline to Manage Job with HTCondor
+## Overall Pipeline to Manage Job with HTCondor
 
 To users, HTCondor is a job scheduler. You give HTCondor a file containing commands that tell it how to run jobs. HTCondor locates a machine that can run each job within the pool of machines, packages up the job and ships it off to this execute machine. The jobs run, and output is returned to the machine that submitted the jobs.
 
-### Pipeline Example
+## Pipeline Example
 
 In this paragraph, an example will be provided to show more details of the pipeline to manage job with HTCondor.
 
@@ -25,7 +23,7 @@ In the beginning, we are going to run the traditional ‘hello world’ program.
    #  commands).
    # $(Process) will be a integer number for each job, starting with "0"
    #  and increasing for the relevant number of jobs.
-   executable = hello-DGX.sh
+   executable = hello-DLS.sh
    arguments = $(Process)
 
    # Specify that HTCondor should transfer files to and from the
@@ -38,7 +36,7 @@ In the beginning, we are going to run the traditional ‘hello world’ program.
    #  file, the desired name of the standard error file.
    # Wherever you see $(Cluster), HTCondor will insert the queue number
    #  assigned to this set of jobs at the time of submission.
-   output = hello-DGX_$(Cluster)_$(Process).out
+   output = hello-DLS_$(Cluster)_$(Process).out
    log = hello-DLS_$(Cluster).log
    error = hello-DLS_$(Cluster)_$(Process).err
 
@@ -69,7 +67,7 @@ In the beginning, we are going to run the traditional ‘hello world’ program.
    condor_submit hello-DLS.sub
    ```
 
-   The **`condor_submit`** command actually submits your jobs to HTCondor. If all goes well, you will see output from the **`condor_submit`** command that appears as:
+   The**`condor_submit`**command actually submits your jobs to HTCondor. If all goes well, you will see output from the**`condor_submit`**command that appears as:
 
    ```text
    Submitting job(s)...
@@ -77,23 +75,23 @@ In the beginning, we are going to run the traditional ‘hello world’ program.
 
    ```
 
-4. To check on the status of your jobs, run **`condor_q`** command. The output of **`condor_q`** should look like this:
+4. To check on the status of your jobs, run**`condor_q`**command. The output of **`condor_q`**should look like this:
 
    ```text
    -- Schedd: dls1.cluster.local : <127.0.0.1:9618?... @ 05/18/21 02:15:29
-   OWNER     BATCH_NAME          SUBMITTED   DONE   RUN    IDLE  TOTAL JOB_IDS
-   user_name CMD: hello-DLS.s   5/18 02:14      _      _      3      3 9.0-2
+   OWNER     BATCH_NAME    SUBMITTED   DONE   RUN    IDLE  TOTAL JOB_IDS
+   user_name ID: 9        5/18 02:14      _      _      3      3 9.0-2
 
    3 jobs; 0 completed, 0 removed, 3 idle, 0 running, 0 held, 0 suspended
    ```
 
-   You can run the **`condor_q`** command periodically to see the progress of your jobs. By default, **`condor_q`** shows jobs grouped into batches by batch name \(if provided\), or executable name. To show all of your jobs on individual lines, add the **`-nobatch`** option.  
+   You can run the**`condor_q`**command periodically to see the progress of your jobs. By default, **`condor_q`**shows jobs grouped into batches by batch name \(if provided\), or executable name. To show all of your jobs on individual lines, add the**`-nobatch`**option.  
   
-   If your job is not in **`RUN`** status for a long time \(either in **`IDLE`** or in **`HOLD`** status\), run **`condor_q –analyze JOB_ID`** to get more details of the status of your job.  
+   If your job is not in**`RUN`**status for a long time \(either in**`IDLE`**or in**`HOLD`**status\), run **`condor_q –analyze JOB_ID`**to get more details of the status of your job.  
   
-   Jobs that failed to be run will always in the queue unless you delete them from the queue. To delete a job, run **`condor_rm JOB_ID`** command.  
+   Jobs that failed to be run will always in the queue unless you delete them from the queue. To delete a job, run **`condor_rm JOB_ID`**command.  
 
-5. When your jobs complete after a few minutes, they’ll leave the queue. If you do a listing of your home directory with the command **`ls -l`**, you should see something like:
+5. When your jobs complete after a few minutes, they’ll leave the queue. If you do a listing of your home directory with the command**`ls -l`**, you should see something like:
 
    ```text
    -rw-r--r-- 1 user_name user_name    0 Jan 29 02:14 hello-DLS_9_0.err

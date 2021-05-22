@@ -1,4 +1,4 @@
-# Introduction of HTCondor™
+# Introduction of HTCondor
 
 ## What is HTCondor
 
