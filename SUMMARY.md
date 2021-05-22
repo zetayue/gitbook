@@ -23,6 +23,7 @@
   * [HTCondor Tutorial](useful-tutorials/htcondor-tutorial/README.md)
     * [Introduction of HTCondor](useful-tutorials/htcondor-tutorial/introduction-of-htcondor-tm.md)
     * [Quick Start Guide](useful-tutorials/htcondor-tutorial/manage-job-with-htcondor.md)
+    * [Submitting Vanilla Job](useful-tutorials/htcondor-tutorial/submitting-vanilla-job.md)
     * [Submitting Docker Job](useful-tutorials/htcondor-tutorial/submitting-docker-job.md)
     * [HTCondor Useful Commands](useful-tutorials/htcondor-tutorial/htcondor-useful-commands.md)
   * [Jupyter Notebook Tutorial](useful-tutorials/jupyter-notebook-tutorial/README.md)
