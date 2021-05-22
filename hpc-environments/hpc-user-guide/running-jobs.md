@@ -42,10 +42,6 @@ For more details about the `htop` command, please refer to the [official website
 
 ## Submit a Job
 
-{% hint style="danger" %}
-[HTCondor](https://research.cs.wisc.edu/htcondor/) is chosen as the workload management system on DLS. Please always submit your jobs using HTCondor on DLS.
-{% endhint %}
-
 ### Job on GPU
 
 For GPU jobs, the bottleneck is the GPU memory used. If the GPU does not have enough memory to run the job, error like 
@@ -58,7 +54,7 @@ RuntimeError: CUDA error: out of memory
 
 Since each GPU has 16GB memory on DGX and 32GB memory on DLS, using single GPU is enough in most cases. 
 
-For example, you can specify the GPU device for your python job by using the command \(no need to do this when using HTCondor to submit job\):
+For example, you can specify the GPU device for your python job by using the command:
 
 ```text
 CUDA_VISIBLE_DEVICES=N python XXXX.py
