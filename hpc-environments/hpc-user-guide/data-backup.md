@@ -4,23 +4,23 @@ description: Be aware that your data can be easily damaged on HPCs
 
 # Data Backup
 
-{% hint style="warning" %}
-Simply storing data under `/raid` without a backup is unsafe since we use the [RAID 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) configuration on the DGX and DLS! 
+Simply storing data under `/raid` without a backup is unsafe since we use the [RAID 0](https://en.wikipedia.org/wiki/Standard\_RAID\_levels#RAID\_0) configuration on the DGX and DLS!
 
-It is **mandatory** that all users periodly back up their data by themselves using their preferred ways.
-{% endhint %}
+It is **mandatory** that all users periodically back up their data (1) under the HPCs' own backup directories and (2) by themselves using their preferred ways.
 
-### 1. On DGX
+### 1. Backup Directories
 
-All users are **required** to back up their data under their own back-up directories:
+| HPC | Backup Directory                  |
+| --- | --------------------------------- |
+| DGX | `/media/hajdini/backup/user_name` |
+| DLS | `/data/dls1/backup`               |
 
-`/data/dgx/backup/user_name`
+### 2. Check Disk Space
 
-{% hint style="info" %}
-The data under `/data/dgx/backup` is stored in an external 8TB disk. It is also recommended that all users still make another copy of their important data outside the DGX.
-{% endhint %}
+Before having the backup on HPCs' own directories, be sure to check about the remaining disk space via command
 
-### 2. On DLS
+```
+df -lh
+```
 
-Since there are no back-up directories on the DLS, all users have to periodly back up their important data outside the DLS. 
-
+The disk usage information can be found related to the backup directory.
