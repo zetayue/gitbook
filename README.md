@@ -23,7 +23,4 @@ Lei Xie, Ph.D. Professor, Computer Science, Hunter College, CUNY
 | Yue Qiu        | yqiu@gradcenter.cuny.edu      |
 | Beatrice Cai   | tian.cai1@baruchmail.cuny.edu |
 | Yoyo Wu        | youwu9254@gmail.com           |
-| Ryan Tan       | ryan.k.tan@outlook.com        |
 | Joshua Rollins | joshuaerollins@gmail.com      |
-| Che Martin     | che.l.martin@gmail.com        |
-
