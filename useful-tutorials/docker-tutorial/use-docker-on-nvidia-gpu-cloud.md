@@ -20,7 +20,7 @@ The NGC container registry provides containerized versions of these frameworks. 
 
 The design of the platform software is centered around a minimal OS and driver install on the server and provisioning of all application and SDK software in NVIDIA Docker containers through NVIDIA Docker Registry.
 
-![](https://dgx-wiki.readthedocs.io/en/latest/\_images/nvidia-docker.png)
+![](../../.gitbook/assets/QQ截图20230331153458.png)
 
 ## Use NGC Service on HPCs
 
@@ -31,7 +31,7 @@ To use NGC Service and framework container images on HPCs, all users have to fir
 In order to perform your research tasks on docker container images, the first step is **choose a proper one** that contains the correct version of software you need.
 
 {% hint style="danger" %}
-In many cases, even though a deep learning framework is decided (e.g. PyTorch), the codes you want to run will only support certain versions of PyTorch and CUDA (e.g. PyTorch 1.4 and CUDA 10.2). Thus the container with mismatched version of the software will raise errors.&#x20;
+In many cases, even though a deep learning framework is decided (e.g. PyTorch), the codes you want to run will only support certain versions of PyTorch and CUDA (e.g. PyTorch 1.4 and CUDA 10.2). Thus the container with mismatched version of the software will raise errors.
 {% endhint %}
 
 ![](../../.gitbook/assets/logo2.png)
@@ -40,12 +40,11 @@ For the deep learning frameworks like **PyTorch, TensorFlow, MXNet, NVCaffe, Kal
 
 To choose a proper one, two things have to be checked:
 
-1.  Check the docker images that meet your demand on [https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html](https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html)&#x20;
+1.  Check the docker images that meet your demand on [https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html](https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html)
 
     or\
-    [https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes](https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes). \
-    The links include whats inside the different releases of the NVIDIA container images for those deep learning frameworks.\
-
+    [https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes](https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes).\
+    The links include whats inside the different releases of the NVIDIA container images for those deep learning frameworks.\\
 2.  Check the docker images that already exist on the HPCs via commend:
 
     ```
@@ -95,7 +94,7 @@ Run a container pulled from NGC:
 nvidia-docker run --name containerName -it --network=host --shm-size=1g --rm -v local_dir:container_dir nvcr.io/nvidia/repository:<xx.xx>
 ```
 
-For example:&#x20;
+**For example:**
 
 If you want to run a NVIDIA container image of TensorFlow with `18.01-py3` release. Your working directory contains files is `/raid/home/user_name/workspace` , and `user_name` is your account name on the HPCs. If you want to see those files in the directory of `/workspace` in the container image, then the command to run that container image with a name of `test` will be like this:
 
