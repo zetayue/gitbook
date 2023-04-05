@@ -40,12 +40,10 @@ For the deep learning frameworks like **PyTorch, TensorFlow, MXNet, NVCaffe, Kal
 
 To choose a proper one, two things have to be checked:
 
-1.  Check the docker images that meet your demand on [https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html](https://docs.nvidia.com/deeplearning/frameworks/support-matrix/index.html)
-
-    or\
-    [https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes](https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes).\
-    The links include whats inside the different releases of the NVIDIA container images for those deep learning frameworks.\\
-2.  Check the docker images that already exist on the HPCs via commend:
+1. Check the docker images that meet your demand on \
+   [https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes](https://docs.nvidia.com/deeplearning/frameworks/index.html#optimized-frameworks-release-notes).\
+   The links include what's inside the different releases of the NVIDIA container images for those deep learning frameworks.
+2.  Check the docker images that already exist on the HPCs via command:
 
     ```
     docker images
@@ -64,7 +62,7 @@ To choose a proper one, two things have to be checked:
     nvcr.io/nvidia/caffe        17.12                          cd94fcaaec3f        2 months ago        3.25GB
     ```
 
-    Note that the `TAG` of each NVIDIA container image (e.g. `18.01`) is just the release version of the image as listed in the links given above.
+    Note that the `TAG` of each NVIDIA container image (e.g. `18.01`) is the release version of the image as listed in the links given above.
 
 If you find your needed release of the image is not on the HPCs, please contact the admins to get it.
 
