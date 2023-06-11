@@ -48,6 +48,7 @@ Read more at: [http://docs.nvidia.com/dgx/dgx-station-user-guide/index.html](htt
 
 If you have any problems with using the DGX. Please contact the administrators of DGX-Lei workstation:
 
-| Name       | Email                                                             |
-| ---------- | ----------------------------------------------------------------- |
-| Shuo Zhang | [szhang4@gradcenter.cuny.edu](mailto:szhang4@gradcenter.cuny.edu) |
+| Name            | Email                                                             |
+| --------------- | ----------------------------------------------------------------- |
+| Shuo Zhang      | [szhang4@gradcenter.cuny.edu](mailto:szhang4@gradcenter.cuny.edu) |
+| Violent Hajdini | [vh542@hunter.cuny.edu](mailto:vh542@hunter.cuny.edu)             |
