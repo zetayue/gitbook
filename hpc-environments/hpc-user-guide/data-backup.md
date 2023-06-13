@@ -10,7 +10,7 @@ It is **mandatory** that all users periodically back up their data (1) under the
 
 ### 1. Backup Directories
 
-<table><thead><tr><th width="172">HPC</th><th>Backup Directory</th></tr></thead><tbody><tr><td>DGX</td><td><code>/data/dgx/backup</code></td></tr><tr><td>DLS</td><td><code>/data/dls1/backup</code></td></tr></tbody></table>
+<table><thead><tr><th width="172">HPC</th><th>Backup Directory</th></tr></thead><tbody><tr><td>DGX</td><td><code>/data/dgx/backup</code></td></tr><tr><td>DLS</td><td><code>/data/dls1/backup/md0/md0/home</code></td></tr></tbody></table>
 
 ### 2. Check Disk Space
 
