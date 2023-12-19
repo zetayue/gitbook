@@ -23,7 +23,7 @@ The Deep Learning Server (DLS) in the CS department of Hunter College is the Sup
 
 ## Administrators
 
-If you have any problems of using the DGX. Please contact the administrators of DGX-Lei workstation:
+If you have any problems of using DLS. Please contact the administrators of DLS:
 
 | Name              | Email                       |
 | ----------------- | --------------------------- |
