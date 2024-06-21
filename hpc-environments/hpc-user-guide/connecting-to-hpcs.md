@@ -1,13 +1,14 @@
 # Connect to HPCs
 
-The IP addresses of the [DGX-Lei workstation](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/summary-of-hpcs/dgx-lei-workstation) and the [Hunter DLS Server](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/summary-of-hpcs/hunter-dls-server) are:
+The IP addresses of the HPCs are:
 
-| HPC | IP address     |
-| --- | -------------- |
-| DGX | 146.95.214.135 |
-| DLS | 146.95.128.169 |
+| HPC    | IP address/Host name    |
+| ------ | ----------------------- |
+| DGX    | 146.95.214.135          |
+| DLS    | 146.95.128.169          |
+| Dragon | csgpu01.hunter.cuny.edu |
 
-Both of the two machines are inside the network of Hunter College (Hunter network).
+All of the machines are inside the network of Hunter College (Hunter network).
 
 ## 1. Inside the Hunter Network
 
@@ -38,7 +39,7 @@ If you want to access the HPCs outside the Hunter network, you can use the follo
 
 ### 2.2. SSH with SSH Key Pair (Recommended)
 
-This way is more secure than the first one and you don't need to type your password every time.
+This way is more secure than the first one and you don't need to type your password every time. You will still need an [eniac account](http://web.archive.org/web/20190726111206/http://www.geography.hunter.cuny.edu/tbw/CS.Linux.Lab.FAQ/department\_of\_computer\_science.faq.htm).
 
 1.  Create your own SSH keys
 
