@@ -18,7 +18,7 @@ Before running your jobs, another thing has to be done is to check the status of
 
 > Can I run my job now on a HPC?
 
-There are two useful commands to moniter the status of the system as well as the jobs running: `nvidia-smi` and `htop`.
+The following commands are useful to moniter the status of the system as well as the jobs running: `nvidia-smi`,  `htop` and `df -lh`.
 
 #### GPU Usage:
 
@@ -26,7 +26,7 @@ The `nvidia-smi` command is powerful to see the current usage of GPUs as well as
 
 ![](../../.gitbook/assets/qq-jie-tu-20200520180640.png)
 
-From the information, we can see which GPU has enough memory for running a job. In the example, only the GPU with number 2 has ~4000MB spare memory.
+From the information, we can see which GPU has enough memory for running a job. In the example, only the GPU with number 2 has \~4000MB spare memory.
 
 {% hint style="danger" %}
 Do not try to run a new job on a GPU with fully-loaded memory, otherwise the old jobs on the GPU might be affected and stopped.
@@ -40,31 +40,40 @@ The `htop` command can show all of the jobs running on the machine as well as th
 
 For more details about the `htop` command, please refer to the [official website](https://hisham.hm/htop/).
 
+#### Disk Usage:
+
+The `df -lh` command can help you to check the usage of the disks:
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+If the disk mounted on `/` or `/raid` is full, it would be not possible to run jobs or run commands on the machine. Be sure to always remove useless data or move unused data to the [backup disk](https://compsci-hunter.gitbook.io/xie-research-group/hpc-environments/hpc-user-guide/data-backup#id-1.-backup-directories).
+{% endhint %}
+
 ## Submit a Job
 
 ### Job on GPU
 
-For GPU jobs, the bottleneck is the GPU memory used. If the GPU does not have enough memory to run the job, error like 
+For GPU jobs, the bottleneck is the GPU memory used. If the GPU does not have enough memory to run the job, error like
 
-```text
+```
 RuntimeError: CUDA error: out of memory
 ```
 
- will be raised.
+will be raised.
 
-Since each GPU has 16GB memory on DGX and 32GB memory on DLS, using single GPU is enough in most cases. 
+Since each GPU has 16GB memory on DGX and 32GB memory on DLS, using single GPU is enough in most cases.
 
 For example, you can specify the GPU device for your python job by using the command:
 
-```text
+```
 CUDA_VISIBLE_DEVICES=N python XXXX.py
 ```
 
-N is the GPU device number for `XXXX.py` file to run on it \(N can be 0~3 on DGX and 0~7 on DLS\). Please check the status of GPUs \(using the command `nvidia-smi`\) before running your job to decide an N number.
+N is the GPU device number for `XXXX.py` file to run on it (N can be 0~~3 on DGX and 0~~7 on DLS). Please check the status of GPUs (using the command `nvidia-smi`) before running your job to decide an N number.
 
 ## Monitor a Job
 
-After submitting a job, users can use `nvidia-smi` and `htop` to check the GPU and CPU status of the job. 
+After submitting a job, users can use `nvidia-smi` and `htop` to check the GPU and CPU status of the job.
 
-If you find your GPU job uses a very small amount of the computations on the GPU \(e.g. the `Volatile GPU-Util` is close to 0% all the time\) via `nvidia-smi`, it is possible that there are issues in your code.
-
+If you find your GPU job uses a very small amount of the computations on the GPU (e.g. the `Volatile GPU-Util` is close to 0% all the time) via `nvidia-smi`, it is possible that there are issues in your code.

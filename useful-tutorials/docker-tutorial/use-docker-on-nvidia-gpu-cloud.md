@@ -20,7 +20,11 @@ The NGC container registry provides containerized versions of these frameworks. 
 
 The design of the platform software is centered around a minimal OS and driver install on the server and provisioning of all application and SDK software in NVIDIA Docker containers through NVIDIA Docker Registry.
 
-![](../../.gitbook/assets/QQ截图20230331153458.png)
+<div align="center">
+
+<img src="../../.gitbook/assets/QQ截图20230331153458.png" alt="">
+
+</div>
 
 ## Use NGC Service on HPCs
 
