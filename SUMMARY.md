@@ -5,6 +5,7 @@
   * [Summary of HPCs](hpc-environments/summary-of-hpcs/README.md)
     * [DGX (Group)](hpc-environments/summary-of-hpcs/dgx-lei-workstation.md)
     * [DLS (Department)](hpc-environments/summary-of-hpcs/hunter-dls-server.md)
+    * [Dragon (Group)](hpc-environments/summary-of-hpcs/dragon-group.md)
   * [HPC User Guide (Must Read)](hpc-environments/hpc-user-guide/README.md)
     * [Overall Workflow](hpc-environments/hpc-user-guide/workflow.md)
     * [Connect to HPCs](hpc-environments/hpc-user-guide/connecting-to-hpcs.md)

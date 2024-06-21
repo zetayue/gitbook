@@ -88,7 +88,7 @@ If you find your needed release of the image is not on the HPCs, please contact 
     docker pull nvcr.io/nvidia/tensorflow:18.01-py2
     ```
 
-### 3. Use Docker Images
+### 3. Use Docker Images (on DGX and DLS)
 
 Run a container pulled from NGC:
 
@@ -105,3 +105,13 @@ nvidia-docker run --name test -it --network=host --shm-size=1g --rm -v /raid/hom
 ```
 
 Then you will be able to synchronize files between these two specified directories. A more detailed explanation of this command can be found [here](http://docs.nvidia.com/ngc/ngc-user-guide/index.html#keyconcepts).
+
+### 4. Use Docker Images (on Dragon)
+
+The environment on Dragon needs some more flags to be specified when running docker images compared to DGX and DLS. Run a container pulled from NGC:
+
+```
+nvidia-docker run --name containerName -it --network=host --shm-size=1g --rm --gpus all --privileged -v local_dir:container_dir nvcr.io/nvidia/repository:<xx.xx>
+```
+
+**Besides, the GPUs (L40s) on Dragon only support docker images that have CUDA > 11.7, otherwise the GPUs will not be used inside the docker environment.**

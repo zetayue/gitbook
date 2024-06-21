@@ -28,10 +28,7 @@ Built on container technology powered by NVIDIA Docker, this unified deep learni
 
 ### Processors
 
-| Component | Qty | Description                                                       |
-| --------- | --- | ----------------------------------------------------------------- |
-| CPU       | 2   | Intel Xeon E5-2698 v4 2.2 GHz 20-Core (40-core total)             |
-| GPU       | 4   | NVIDIA Tesla® V100 with 16 GB per GPU (64 GB total) of GPU memory |
+<table><thead><tr><th width="147">Component</th><th width="75.33333333333331">Qty</th><th>Description</th></tr></thead><tbody><tr><td>CPU</td><td>2</td><td>Intel Xeon E5-2698 v4 2.2 GHz 20-Core (40 threads total)</td></tr><tr><td>GPU</td><td>4</td><td>NVIDIA Tesla® V100 with 16 GB per GPU (64 GB total of GPU memory) </td></tr></tbody></table>
 
 ### System Memory and Storage
 
