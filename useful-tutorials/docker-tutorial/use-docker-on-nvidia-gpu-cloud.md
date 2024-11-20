@@ -111,7 +111,7 @@ Then you will be able to synchronize files between these two specified directori
 The environment on Dragon needs some more flags to be specified when running docker images compared to DGX and DLS. Run a container pulled from NGC:
 
 ```
-nvidia-docker run --name containerName -it --network=host --shm-size=1g --rm --gpus all --privileged -v local_dir:container_dir nvcr.io/nvidia/repository:<xx.xx>
+docker run --name containerName -it --network=host --shm-size=1g --rm --gpus all --privileged -v local_dir:container_dir nvcr.io/nvidia/repository:<xx.xx>
 ```
 
 **Besides, the GPUs (L40s) on Dragon only support docker images that have CUDA > 11.7, otherwise the GPUs will not be used inside the docker environment.**
